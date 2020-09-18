@@ -1,0 +1,99 @@
+<resources>
+    <string name="app_name">CV19</string>
+    <string name="registrati">Registrati</string>
+    <string name="registrazione">Registrazione</string>
+    <string name="recupera">Recupera</string>
+    <string name="Indietro">Indietro</string>
+    <string name="password">Password</string>
+    <string name="ripeti_password">Ripeti Password</string>
+    <string name="Login">Login</string>
+    <string name="Hai_">Hai dimenticato la password?</string>
+    <string name="Email">E-mail</string>
+    <string name="inserire_email">inserire email</string>
+    <string name="inserire_password">inserire password</string>
+    <string name="inserire_n_password">inserire nuova password</string>
+    <string name="r_n_password">Ripeti nuova password</string>
+    <string name="inserire_v_password">inserire vecchia password</string>
+    <string name="inserire_nickname">inserire nickname</string>
+    <string name="Username">Username</string>
+    <string name="Richiesta_c">Invia Richiesta cancellazione Account</string>
+    <string name="Nome">Nome</string>
+    <string name="Cognome">Cognome</string>
+    <string name="Nickname">Nickname</string>
+    <string name="inserire_nome">inserire nome</string>
+    <string name="inserire_cognome">inserire cognome</string>
+    <string name="conferma">Conferma</string>
+    <string name="Annulla">Annulla</string>
+    <string name="invia_email">Invia Email recupero</string>
+    <string name="Modifica_imp">Modifica Impostazioni</string>
+    <string name="n_password">Nuova Password</string>
+    <string name="v_password">Vecchia Password</string>
+    <string name="testo_recensione">Testo recensione</string>
+    <string name="valutazione">Valutazione</string>
+    <string name="iscriviti">Iscriviti</string>
+    <string name="struttura">Struttura</string>
+    <string name="cerca_struttura">Ricerca struttura</string>
+    <string name="descrizione">Descrizione struttura</string>
+    <string name="immagine_struttura">Immagine Struttura</string>
+    <string name="Visualizza">Visualizza</string>
+    <string name="pubblica">Pubblica recensione</string>
+    <string name="title_activity_visualizza_mappa">Map</string>
+    <string name="Museo">Museo</string>
+    <string name="Bar">Bar</string>
+    <string name="Club">Club</string>
+    <string name="menu_utente">Menu</string>
+    <string name="Hotel">Hotel</string>
+    <string name="Ristorante">Ristorante</string>
+    <string name="nome_struttura">Nome Struttura</string>
+    <string name="Cerca">Cerca</string>
+    <string name="categoria">Categoria</string>
+    <string name="città">Città</string>
+    <string name="recensioni">Recensioni</string>
+    <string name="voto">Voto</string>
+    <string name="filtra">Filtra</string>
+    <string name="accedi">Accedi</string>
+    <string name="segnala">Segnala</string>
+    <string name="motivazione">Motivazione</string>
+    <string name="inserire_motivazione">Motivo richiesta cancellazione</string>
+    <string name="recensioni_personali">Recensioni effettuate</string>
+    <string name="ricerca_avanzata">Ricerca Avanzata</string>
+    <string name="menu">Menù</string>
+    <string name="logout">Logout</string>
+    <string name="consiglia_viaggi_19">Consiglia Viaggi 19</string>
+    <string name="recupera_password">Recupera Password</string>
+    <string name="ripeti_nuova_password">ripeti nuova password</string>
+    <string name="inserire_nuova_password">inserire nuova password</string>
+    <string name="invia_richiesta_cancellazione_account">Invia richiesta cancellazione account</string>
+    <string name="visualizza_recensioni">Visualizza Recensioni</string>
+
+
+    <string-array name="Città">
+        <item />
+        <item>Napoli</item>
+        <item>Pozzuoli</item>
+        <item>Bacoli</item>
+        <item>Capri</item>
+        <item>Ischia</item>
+        <item>Procida</item>
+    </string-array>
+
+    <string-array name="Categoria">
+        <item />
+        <item>Ristorante</item>
+        <item>Hotel</item>
+        <item>Museo</item>
+        <item>Bar</item>
+        <item>Club</item>
+    </string-array>
+
+    <string-array name="Recensioni">
+        <item />
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+    </string-array>
+
+
+</resources>

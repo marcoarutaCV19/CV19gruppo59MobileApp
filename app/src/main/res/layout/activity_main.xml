@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/capri"
+    tools:context=".Activities.Activity_main">
+
+    <TextView
+        android:id="@+id/textViewTitolo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="8dp"
+        android:fontFamily="@font/marcellus"
+        android:linksClickable="false"
+        android:text="Eccoti di nuovo!"
+        android:textColor="#18592E"
+        android:textSize="27sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.041" />
+
+    <TextView
+        android:id="@+id/textViewSottotitolo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/marcellus"
+        android:text="Scegli la tua destinazione"
+        android:textColor="#18592E"
+        android:textSize="13sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewTitolo" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="559dp"
+        android:layout_marginTop="110dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewSottotitolo">
+
+        <EditText
+            android:id="@+id/campo_ricerca"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:background="#594E4F55"
+            android:layout_weight="1"
+            android:layout_marginTop="1dp"
+            android:ems="10"
+            android:importantForAutofill="no"
+            android:inputType="textPersonName"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:textColor="#18592E"
+            android:textColorHint="#ACE8C0"
+            android:textColorLink="#18592E" />
+
+        <ImageButton
+            android:id="@+id/lente"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#ACE8C0"
+            android:contentDescription="@string/cerca_struttura"
+            android:onClick="ricerca"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            app:srcCompat="@android:drawable/ic_menu_search" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/RicercaAvanzata"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:fontFamily="@font/marcellus"
+        android:text="Ricerca Avanzata"
+        android:onClick="ricercaAvanzataIsClicked"
+        android:clickable="true"
+        android:focusable="true"
+        android:textColor="#18592E"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.058"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="RtlCompat"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+
+    <ImageButton
+        android:id="@+id/Menu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/menus"
+        android:backgroundTint="#ACE8C0"
+        android:contentDescription="@string/menu_utente"
+        android:onClick="menuIsClicked"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.044"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.023" />
+
+
+    <ImageView
+        android:id="@+id/imageViewMappa"
+        android:layout_width="286dp"
+        android:layout_height="166dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="300dp"
+        android:clickable="true"
+        android:contentDescription="@string/title_activity_visualizza_mappa"
+        android:focusable="true"
+        android:onClick="mapIsClicked"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/RicercaAvanzata"
+        app:layout_constraintVertical_bias="0.246"
+        app:srcCompat="@drawable/mappa" />
+
+    <LinearLayout
+        android:id="@+id/lista_strutture"
+        android:layout_width="380dp"
+        android:layout_height="268dp"
+        android:layout_marginStart="13dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.994">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/Strutture"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

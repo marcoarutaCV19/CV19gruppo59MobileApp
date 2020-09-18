@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ischia"
+    android:foregroundTint="#ACE8C0"
+    tools:context=".Activities.Activity_visualizza_struttura">
+
+
+    <ImageButton
+        android:id="@+id/Menu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/menus"
+        android:backgroundTint="#ACE8C0"
+        android:contentDescription="@string/menu_utente"
+        android:onClick="menuIsClicked"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.082"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.023" />
+
+    <LinearLayout
+        android:id="@+id/Ricerca"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="170dp"
+        android:layout_marginBottom="630dp"
+        android:maxHeight="20dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <EditText
+            android:id="@+id/campo_ricerca"
+            android:layout_width="204dp"
+            android:layout_height="30dp"
+            android:layout_weight="1"
+            android:background="#594E4F55"
+            android:ems="10"
+            android:importantForAutofill="no"
+            android:inputType="textPersonName"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:textAlignment="textStart"
+            android:textColor="#18592E"
+            android:textColorHint="#ACE8C0"
+            android:textColorLink="#18592E" />
+
+        <ImageButton
+            android:id="@+id/Lente"
+            android:layout_width="5dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#ACE8C0"
+            android:backgroundTint="#ACE8C0"
+            android:contentDescription="@string/cerca_struttura"
+            android:onClick="ricerca"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            app:srcCompat="@android:drawable/ic_menu_search" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/Struttura"
+        android:layout_width="407dp"
+        android:layout_height="450dp"
+        android:layout_marginTop="300dp"
+        android:layout_marginBottom="287dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <ImageView
+            android:id="@+id/imageStruttura"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_gravity="center_horizontal"
+            android:contentDescription="@string/immagine_struttura"
+            android:paddingLeft="5dp"
+            android:paddingTop="5dp"
+            android:paddingRight="5dp"
+            android:paddingBottom="5dp"
+            app:srcCompat="@android:drawable/stat_notify_sync"
+            tools:ignore="MissingConstraints"
+            tools:srcCompat="@android:drawable/ic_menu_gallery" />
+
+        <TextView
+            android:id="@+id/textViewNomeStruttura"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:fontFamily="@font/marcellus"
+            android:gravity="center_horizontal"
+            android:padding="5dp"
+            android:paddingLeft="5dp"
+            android:paddingTop="5dp"
+            android:paddingRight="5dp"
+            android:paddingBottom="5dp"
+            android:text="Struttura"
+            android:textAlignment="center"
+            android:textAppearance="@style/TextAppearance.AppCompat.Title"
+            android:textColor="#18592E"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textViewValutazione"
+            android:layout_width="match_parent"
+            android:layout_height="37dp"
+            android:layout_marginTop="12dp"
+            android:fontFamily="@font/marcellus"
+            android:gravity="center_horizontal"
+            android:text="@string/valutazione"
+            android:textAlignment="center"
+            android:textColor="#18592E"
+            android:textStyle="bold" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="56dp">
+
+            <TextView
+                android:id="@+id/textViewDescrizione"
+                android:layout_width="350dp"
+                android:layout_height="35dp"
+                android:layout_marginStart="30dp"
+                android:fontFamily="@font/marcellus"
+                android:gravity="center_horizontal"
+                android:padding="5dp"
+                android:paddingLeft="5dp"
+                android:paddingTop="5dp"
+                android:paddingRight="5dp"
+                android:paddingBottom="5dp"
+                android:text="Descrizione"
+                android:textAlignment="center"
+                android:textColor="#18592E"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+        </ScrollView>
+
+        <EditText
+            android:id="@+id/editTextPersonalReview"
+            android:layout_width="350dp"
+            android:layout_height="90dp"
+            android:background="#594E4F55"
+            android:ems="10"
+            android:fontFamily="@font/marcellus"
+            android:hint=" Inserisci qui la tua recensione..."
+            android:importantForAutofill="no"
+            android:inputType="textPersonName"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:textColor="#18592E"
+            android:textColorHint="#ACE8C0" />
+
+        <RatingBar
+            android:id="@+id/ratingBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:numStars="5"
+            android:stepSize="0.5"
+            android:theme="@style/Stars"
+            />
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/buttonVisualizza"
+        android:layout_width="331dp"
+        android:layout_height="36dp"
+        android:layout_gravity="start"
+        android:layout_marginStart="48dp"
+        android:layout_marginEnd="48dp"
+        android:layout_marginBottom="69dp"
+        android:background="#ACE8C0"
+        android:fontFamily="@font/marcellus"
+        android:onClick="showRecensioniStruttura"
+        android:text="Visualizza Recensioni"
+        android:textColor="#18592E"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Struttura" />
+
+    <Button
+        android:id="@+id/buttonPubblica"
+        android:layout_width="331dp"
+        android:layout_height="36dp"
+        android:layout_gravity="start"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="48dp"
+        android:layout_marginBottom="64dp"
+        android:background="#ACE8C0"
+        android:fontFamily="@font/marcellus"
+        android:text="Pubblica Recensione"
+        android:onClick="pubblicaRecensione"
+        android:textColor="#18592E "
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonVisualizza"
+        app:layout_constraintVertical_bias="0.028" />
+
+    <TextView
+        android:id="@+id/Indietro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="200dp"
+        android:layout_marginTop="20dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:fontFamily="@font/marcellus"
+        android:onClick="indietroIsClicked"
+        android:text="Indietro"
+        android:textColor="#ACE8C0"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintHorizontal_bias="0.706"
+        app:layout_constraintStart_toEndOf="@+id/Menu"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

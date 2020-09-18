@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context=".Activities.Activity_visualizza_recensioni_struttura">
+
+    <TextView
+        android:id="@+id/textViewNickname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/marcellus"
+        android:padding="10dp"
+        android:paddingLeft="5dp"
+        android:paddingTop="5dp"
+        android:paddingRight="5dp"
+        android:paddingBottom="5dp"
+        android:text="@string/Username"
+        android:textAppearance="@style/TextAppearance.AppCompat.Title"
+        android:textColor="#18592E"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textViewTestoRecensione"
+        android:layout_width="match_parent"
+        android:layout_height="146dp"
+        android:paddingLeft="5dp"
+        android:paddingTop="5dp"
+        android:paddingRight="5dp"
+        android:paddingBottom="5dp"
+        android:text="@string/testo_recensione"
+        android:textColor="#18592E"
+        android:fontFamily="@font/marcellus"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textViewValutazione"
+        android:layout_width="match_parent"
+        android:layout_height="39dp"
+        android:padding="5dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:paddingBottom="5dp"
+        android:text="@string/valutazione"
+        android:fontFamily="@font/marcellus"
+        android:textColor="#18592E"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/buttonSegnala"
+        android:layout_width="134dp"
+        android:layout_height="30dp"
+        android:background="#ACE8C0"
+        android:backgroundTint="#ACE8C0"
+        android:fontFamily="@font/marcellus"
+        android:onClick="segnalaIsClicked"
+        android:clickable="false"
+        android:enabled="false"
+        android:text="@string/segnala"
+        android:textColor="#18592E"
+        android:textStyle="bold" />
+
+</LinearLayout>

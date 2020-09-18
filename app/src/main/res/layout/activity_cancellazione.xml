@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/statua"
+    tools:context=".Activities.Activity_cancellazione">
+
+    <TextView
+        android:id="@+id/textViewCancellazione"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="176dp"
+        android:layout_marginTop="99dp"
+        android:layout_marginEnd="177dp"
+        android:layout_marginBottom="613dp"
+        android:text="Resta con noi! Ripensaci!"
+        android:textColor="#18592E"
+        android:fontFamily="@font/marcellus"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.458"
+        android:layout_marginLeft="176dp"
+        android:layout_marginRight="177dp" />
+
+
+    <EditText
+        android:id="@+id/editTextMotivazione"
+        android:layout_width="261dp"
+        android:layout_height="130dp"
+        android:background="#594E4F55"
+        android:ems="10"
+        android:fontFamily="@font/marcellus"
+        android:importantForAutofill="no"
+        android:inputType="textPersonName"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.909"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.333"
+        android:gravity="center_horizontal" />
+
+    <TextView
+        android:id="@+id/textViewSottotitolo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="68dp"
+        android:fontFamily="@font/marcellus"
+        android:text="Motivazione:"
+        android:textColor="#18592E"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/editTextMotivazione"
+        app:layout_constraintHorizontal_bias="0.052"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewCancellazione" />
+
+
+
+    <Button
+        android:id="@+id/buttonConferma"
+        android:layout_width="331dp"
+        android:layout_height="36dp"
+        android:layout_gravity="start"
+        android:layout_marginStart="48dp"
+        android:layout_marginEnd="48dp"
+        android:layout_marginBottom="64dp"
+        android:layout_marginTop="225dp"
+        android:background="#ACE8C0"
+        android:fontFamily="@font/marcellus"
+        android:onClick="avantiIsClicked"
+        android:text="Avanti"
+        android:textColor="#18592E"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextMotivazione"
+        app:layout_constraintVertical_bias="0.028" />
+
+    <TextView
+        android:id="@+id/buttonAnnulla"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:textAlignment="center"
+        android:gravity="center_horizontal"
+        android:fontFamily="@font/marcellus"
+        android:onClick="annullaIsClicked"
+        android:clickable="true"
+        android:focusable="true"
+        android:text="Annulla"
+        android:textColor="#18592E"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonConferma"
+        tools:ignore="RtlCompat"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

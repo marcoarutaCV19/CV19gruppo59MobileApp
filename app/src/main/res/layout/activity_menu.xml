@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/namapp"
+    tools:context=".Activities.Activity_menu">
+
+
+    <TextView
+        android:id="@+id/textViewRiepilogoPersonali"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/marcellus"
+        android:text="Riepilogo Recensioni"
+        android:onClick="riepilogoRecensioniIsClicked"
+        android:clickable="true"
+        android:focusable="true"
+        android:layout_marginTop="184dp"
+        android:textColor="#18592E"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="RtlCompat"/>
+
+    <TextView
+        android:id="@+id/textViewLogout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:fontFamily="@font/marcellus"
+        android:text="Log Out"
+        android:clickable="true"
+        android:focusable="true"
+        android:onClick="logOutIsClicked"
+        android:textColor="#18592E"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textViewImpostazioni"
+        tools:ignore="RtlCompat"/>
+
+
+    <TextView
+        android:id="@+id/textViewImpostazioni"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:fontFamily="@font/marcellus"
+        android:text="Impostazioni"
+        android:onClick="impostazioniIsClicked"
+        android:clickable="true"
+        android:focusable="true"
+        android:textColor="#18592E"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textViewRiepilogoPersonali"
+        tools:ignore="RtlCompat"/>
+
+    <TextView
+        android:id="@+id/buttonIndietro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="225dp"
+        android:textAlignment="center"
+        android:gravity="center_horizontal"
+        android:fontFamily="@font/marcellus"
+        android:onClick="indietroIsClicked"
+        android:clickable="true"
+        android:focusable="true"
+        android:text="Indietro"
+        android:textColor="#18592E"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewLogout"
+        tools:ignore="RtlCompat"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
